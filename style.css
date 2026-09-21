@@ -1,0 +1,21 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari, Chrome, Opera */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Old versions of Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}

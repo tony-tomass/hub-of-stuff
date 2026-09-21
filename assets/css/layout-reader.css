@@ -1,0 +1,36 @@
+/* Choose a theme */
+@import url(/assets/css/themes/base-theme.css);
+
+#comic-pg {
+    max-width: 100%;
+}
+
+.comic-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Next & Previous Buttons */
+.nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	padding: 15px;
+	background: none;
+	border: none;
+	color: var(--primary-color-2);
+}
+
+.prev-btn {
+	left: 20px;
+}
+
+.next-btn {
+	right: 20px;
+}
+
+.nav-btn:hover {
+	color: var(--tertiary-color-2);
+	cursor: pointer;
+}

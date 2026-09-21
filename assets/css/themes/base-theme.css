@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Klarissa-Regular";
+    src: url(/assets/fonts/klarissa-regular.ttf);
+}
+
+:root {
+    --primary-color: #0000FF;
+    --primary-color-2: #0051FF;
+    --primary-color-3: #1A1AFFA4;
+    --primary-color-4: #1B1B42;
+    --primary-color-5: #D4D8E8;
+    --primary-color-6: #4177EC;
+    --secondary-color: #F0E2C9;
+    --tertiary-color: #000000;
+    --tertiary-color-2: #FFFFFF;
+}
+
+html, body {
+    scrollbar-color: var(--primary-color-2) var(--primary-color);
+    scrollbar-width: thin;
+}
+
+h1, h2, h3 {
+    font-family: Klarissa-Regular;
+}
+
+body {
+    background: var(--primary-color);
+    background: linear-gradient(0deg,var(--primary-color) 0%, var(--primary-color-4) 51%);
+}
+
+
+/*===========================================================================================================================================*/
+/*==========================================                 MAIN PAGES                  ====================================================*/
+/*===========================================================================================================================================*/
+
+
+/* Hub Header =============================================================================*/
+.top-header {
+    background: var(--secondary-color);
+    color: var(--primary-color-2);
+}
+
+.top-header h1 {
+    filter: drop-shadow(0px 0.05em blue); 
+}
+
+/* Nav Bar ================================================================================*/
+.nav-bar {
+    background-color: var(--primary-color);
+    filter: drop-shadow(0px 7px 5px var(--primary-color-3));
+}
+
+.nav-bar li a {
+    color: var(--secondary-color);
+    font-family: Klarissa-Regular;
+}
+
+.nav-bar li a:hover {
+    background-color: var(--primary-color-2);
+    color: var(--tertiary-color-2);
+}
+
+/*Footer ==================================================================================*/
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: Verdana;
+}
+
+/* Content Boxes ==============================================================================*/
+.card {
+    background-color: var(--tertiary-color);
+    filter: drop-shadow(6px 6px var(--primary-color));
+}
+
+.card h1 {
+    color: var(--primary-color-2);
+}
+
+.card h2, h3 {
+    color: var(--secondary-color);
+}
+
+.card p {
+    font-family: Verdana;
+    color: var(--primary-color-5);
+}
+
+.card a {
+    font-family: Verdana;
+    color: var(--primary-color-6);
+}
+
+.card a:hover {
+    color: var(--tertiary-color-2);
+}
+
+
+.speech-bubble {
+	background: var(--secondary-color);
+    box-shadow: 6px 6px --primary-color;
+}
+
+.speech-bubble p {
+    font-family: Verdana;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.speech-bubble:after {
+	border: 20px solid transparent;
+	border-bottom-color: var(--secondary-color);
+	border-top: 0;
+	border-right: 0;
+}

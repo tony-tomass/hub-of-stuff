@@ -1,0 +1,36 @@
+/* Choose a theme */
+@import url(/assets/css/themes/base-theme.css);
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    font-family: Verdana;
+    visibility: hidden;
+    /* Hidden by default */
+    width: 150px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: 1;
+    filter: drop-shadow(6px 6px var(--primary-color));
+    /* Ensure tooltip is displayed above content */
+    opacity: 0;
+    transition: opacity 1s
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

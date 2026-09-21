@@ -1,0 +1,215 @@
+/* Choose a theme */
+@import url(/assets/css/themes/base-theme.css);
+
+html, body {
+  /* Prevents the mobile browser bounce effect and pull-to-refresh */
+  overscroll-behavior: contain; 
+  
+  /* Stops the browser from treating swipes as screen panning/zooming */
+  touch-action: auto; 
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+/Edge */
+  user-select: none;         /* Standard syntax */
+}
+
+/*===========================================================================================================================================*/
+/*==========================================                 MAIN PAGES                  ====================================================*/
+/*===========================================================================================================================================*/
+
+/* Hub Header ===============================================================================*/
+.top-header {
+    overflow: hidden;
+    word-spacing: -1em;
+    text-align: center;
+    padding: 10px;
+}
+
+.top-header h1 {
+    font-size: clamp(3.5em, 9vw + 1rem, 7.5em);
+    text-align: center;
+    transform: scaleY(1.25);
+}
+
+/* Nav Bar ==================================================================================*/
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    z-index: 2;         
+    top: 0;
+    margin-bottom: 10px;
+}
+
+.nav-bar li a {
+    display: block;
+    padding: 14px 45px;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+/* Footer =====================================================================================*/
+.footer {
+    padding: 5px 5px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* Content Boxes ==============================================================================*/
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+}
+
+.rat-100 {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.rat-90 {
+    width: 90%;
+    max-width: 1080px;
+}
+
+.rat-80 {
+    width: 80%;
+    max-width: 960px;
+}
+
+.rat-70 {
+    width: 70%;
+    max-width: 840px;
+}
+
+.rat-60 {
+    width: 60%;
+    max-width: 720px;
+}
+
+.rat-50 {
+    width: 50%;
+    max-width: 600px;
+}
+
+.rat-40 {
+    width: 40%;
+    max-width: 480px;
+}
+
+.rat-30 {
+    width: 30%;
+    max-width: 360px;
+}
+.rat-20 {
+    width: 20%;
+    max-width: 240px;
+} 
+.rat-10 {
+    width: 10%;
+    max-width: 120px;
+}
+
+
+.card {
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    z-index: 1;;
+}
+
+.card h1 {
+    font-size: 2.65em;
+    padding: 10px;
+    margin: 0;
+}
+
+.card h2, h3 {
+    font-size: 1.75em;
+}
+
+.card p {
+    padding: 5px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.card a {
+    text-decoration: underline;
+}
+
+.no-bg {
+    background: none;
+}
+
+.scroll-container {
+    overflow-y: auto;
+}
+
+.speech-bubble {
+	position: relative;
+	border-radius: .4em;
+}
+
+.speech-bubble p {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 0px;
+	height: 0;
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+/* For mobile screens - when the screen becomes 800 or less pixels wide, do these things */
+@media screen and (max-width: 800px) {
+    .nav-bar li a {
+        padding: 14px 14px;
+        font-size: 1em;
+    }
+    .column {
+        width: 100%;
+        max-width: 400px;
+        padding: 0;
+    }
+    .mobile-hide {
+        display: none;
+    }
+}
