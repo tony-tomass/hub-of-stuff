@@ -19,7 +19,7 @@ function toggleTag(tagButton) {
 	if (activeTags.has(category)) {
 		activeTags.delete(category);
 		tagButton.classList.remove("active");
-	} 
+	}
 	else {
 		activeTags.add(category);
 		tagButton.classList.add("active");
@@ -47,11 +47,11 @@ function toggleTag(tagButton) {
 		//Multi-tag system
 		if (activeTags.size === 0 || hasMatchingTag) {
 			img.classList.remove('hide');
-		} 
+		}
 		else {
 			img.classList.add('hide');
 		}
-  	});
+	});
 }
 
 
@@ -61,7 +61,7 @@ function toggleTag(tagButton) {
 // 	// Filters out images if they have the "hide" class
 // 	activeImages = galleryItems.filter(img => !img.classList.contains("hide"))
 // 	//console.log(activeImages.length)
-	
+
 // 	currentIndex = index;
 // 	//console.log(currentIndex);
 
@@ -87,27 +87,27 @@ function toggleTag(tagButton) {
 
 // Open Lightbox
 function openLightbox(clickedImg) {
-  // Find all images in the grid and filter for only visible ones
-  activeImages = galleryItems.filter(img => !img.classList.contains('hide'));
-  
-  // Locate the current image's position relative to the active/visible list
-  currentIndex = activeImages.indexOf(clickedImg);
-  console.log(currentIndex);
+	// Find all images in the grid and filter for only visible ones
+	activeImages = galleryItems.filter(img => !img.classList.contains('hide'));
 
-  // Safety check: if the image isn't part of the visible set, abort
-  if (currentIndex === -1) {
-	return; 
-  }
+	// Locate the current image's position relative to the active/visible list
+	currentIndex = activeImages.indexOf(clickedImg);
+	console.log(currentIndex);
 
-  updateLightboxImage();
-  lightbox.style.display = 'flex';
+	// Safety check: if the image isn't part of the visible set, abort
+	if (currentIndex === -1) {
+		return;
+	}
+
+	updateLightboxImage();
+	lightbox.style.display = 'flex';
 }
 
 function updateLightboxImage() {
-  const lightboxImg = document.getElementById('lightbox-img');
-  //lightboxImg.src = activeImages[currentIndex].src;
-  lightboxImg.src = activeImages[currentIndex].src.replaceAll("_thumb", "");
-  lightboxImg.alt = activeImages[currentIndex].alt;
+	const lightboxImg = document.getElementById('lightbox-img');
+	//lightboxImg.src = activeImages[currentIndex].src;
+	lightboxImg.src = activeImages[currentIndex].src.replaceAll("_thumb", "");
+	lightboxCaption.textContent = activeImages[currentIndex].dataset.date;
 }
 
 // Navigation Click Events

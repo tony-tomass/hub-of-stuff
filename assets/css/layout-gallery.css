@@ -58,7 +58,7 @@
 
 /* Caption Text */
 #lightbox-caption {
-	color: var(--secondary-color-2);
+	color: var(--primary-color-5);
 	margin-top: 15px;
 	font-family: sans-serif;
 	font-size: 1.1rem;
@@ -123,6 +123,10 @@
 	border: 1px dashed white;
 	margin: 3px;
 	padding: 7px;
+}
+
+.filter-buttons button:hover {
+	cursor: pointer;
 }
 
 .filter-buttons button.series {
