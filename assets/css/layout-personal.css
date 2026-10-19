@@ -57,5 +57,5 @@
 
 .item-container img:hover {
 	border: var(--tertiary-color-2) solid 2px;
-	cursor: pointer;
+	cursor: pointer
 }
