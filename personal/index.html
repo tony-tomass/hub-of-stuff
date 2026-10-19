@@ -44,8 +44,7 @@
                     <h2>
 						links
 					</h2>
-					<p>
-					</p>
+					<p><small>to be added!</small></p>
                 </div>
             </div>
             <div class="column rat-70">
@@ -56,7 +55,8 @@
 					</h2>
 					<hr>
 					<p>
-						I just like making stuff, mainly art stuff, but I also like a whole bunch of other stuff!
+						I just like making stuff, mainly art stuff, but I also really like a whole bunch of other stuff! Like pretty much everything
+						you see below!
 					</p>
                 </div>
 
@@ -74,20 +74,20 @@
 
 					<div class="row">
 
-						<div class="column rat-30 tooltip" style="position: relative;">
-							<span class="tooltiptext"><em>"The greatest damn manga/anime to be created!"</em></span>
+						<div class="column rat-30" style="position: relative;">
+							<!-- <span class="tooltiptext"><em>"The greatest damn manga/anime to be created!"</em></span> -->
 							<img src="/assets/img/personal/pillar-db.avif" style="width: 100%;">
 							<img src="/assets/img/personal/pillar-db-logo.png" style="position: absolute; top: 0; left: -5%; width: 170px; filter: drop-shadow(6px 6px var(--primary-color));">
 						</div>
 
-						<div class="column rat-30 tooltip" style="position: relative;">
-							<span class="tooltiptext"><em>"Coolest bug-themed superheroes ever!"</em></span>
+						<div class="column rat-30" style="position: relative;">
+							<!-- <span class="tooltiptext"><em>"Coolest bug-themed superheroes ever!"</em></span> -->
 							<img src="/assets/img/personal/pillar-kr.avif" style="width: 100%;">
 							<img src="/assets/img/personal/pillar-kr-logo.png" style="position: absolute; top: 0; left: -5%; width: 200px; filter: drop-shadow(6px 6px var(--primary-color));">
 						</div>
 
-						<div class="column rat-30 tooltip" style="position: relative;">
-							<span class="tooltiptext"><em>"Endlessly rewatchable, never fails to make me smile!"</em></span>
+						<div class="column rat-30" style="position: relative;">
+							<!-- <span class="tooltiptext"><em>"Endlessly rewatchable, never fails to make me smile!"</em></span> -->
 							<img src="/assets/img/personal/pillar-ss.avif" style="width: 100%;">
 							<img src="/assets/img/personal/pillar-ss-logo.png" style="position: absolute; top: 0; left: -5%; width: 200px; filter: drop-shadow(6px 6px var(--primary-color));">
 						</div>
@@ -100,9 +100,58 @@
 
         </div>
 
+		<div class="row" id="tv_container" style="scroll-margin-top: 80px;">
+			<div class="column rat-100">
+				<div class="card">
+
+					<div style="height: 480px">
+						<iframe 
+							id="tv"
+  							width="100%" 
+  							height="100%" 
+  							src="" 
+  							title="my tv" 
+  							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  							allowfullscreen
+							style="background-image: url(/assets/img/personal/no_vid_loaded.gif); background-size: cover;"
+							>
+						</iframe>
+					
+					</div>
+
+					<p style="color: var(--primary-color-2);" onclick="resetTV()"> ⬤ reset</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column rat-90">
+				<div class="card">
+
+					<h2> buncha stuff i really like </h2>
+					<p><small>Click on one to load some video related to it on my tv up there. More to be added!</small></p>
+					<hr>
+
+					<div class="item-container">
+						<img src="/assets/img/personal/items/item_db.avif" loading="lazy" onclick="updateTV('FJqGirLjQn4')">
+						<img src="/assets/img/personal/items/item_kabuto.avif" loading="lazy" onclick="updateTV('-P5HNuZ94wU')">
+						<img src="/assets/img/personal/items/item_sponge.avif" loading="lazy" onclick="updateTV('O0iRa3tBB-A')">
+						<img src="/assets/img/personal/items/item_es4.avif" loading="lazy" onclick="updateTV('rH4QTAzMFDQ')">
+						<img src="/assets/img/personal/items/item_ygomanga.avif" loading="lazy" onclick="updateTV('P5ARlPIgKRI')">
+						<img src="/assets/img/personal/items/item_ds1.avif" loading="lazy" onclick="updateTV('tCZFx6cx7w8')">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
             <p>tombutt and friends © 2026</p>
         </footer>
+
+		<script src="/assets/js/personal_tv.js" defer></script>
 
     </body>
 </html>

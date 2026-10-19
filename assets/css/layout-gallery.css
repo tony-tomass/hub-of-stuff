@@ -52,7 +52,7 @@
 /* Lightbox Main Image */
 .lightbox img {
 	max-width: 95%;
-	max-height: 90%;
+	max-height: 95%;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 

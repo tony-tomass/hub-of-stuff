@@ -104,7 +104,7 @@ function openLightbox(clickedImg) {
 }
 
 function updateLightboxImage() {
-	const lightboxImg = document.getElementById('lightbox-img');
+	//const lightboxImg = document.getElementById('lightbox-img');
 	//lightboxImg.src = activeImages[currentIndex].src;
 	lightboxImg.src = activeImages[currentIndex].src.replaceAll("_thumb", "");
 	lightboxCaption.textContent = activeImages[currentIndex].dataset.date;
