@@ -157,3 +157,12 @@
 	border-color: #FFFFFF;
 	border-style: solid;
 }
+
+/* For mobile screens - when the screen becomes 800 or less pixels wide, do these things */
+@media screen and (max-width: 800px) {
+    .gallery-container img {
+		width: 140px;
+		height: 140px;
+		margin: 2px;
+	}
+}
